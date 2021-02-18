@@ -1,0 +1,173 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+ *,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+}
+:focus,:active{
+	outline:none;
+}
+a:focus,a:active{
+	outline:none;
+}
+nav,footer,header,aside{
+	display:block;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height:1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+
+}
+input,button, textarea{
+	font-family:inherit;
+
+}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0; border:0;}
+a, a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li {list-style:none;}
+img{vertical-align:top;}
+
+body{                                         /*По элементу*/
+    background-color:rgb(59,63,69);
+    font-family:'Trebuchet MS', Arial, sans-serif;
+}
+
+.header {                                     /*По классу*/
+    text-align:center;
+    background-color:rgb(74,79,86);
+}
+
+.title {
+    color:rgb(229,124,127);
+    padding:15px 0 8px 0;
+}
+
+.subtitle {
+    color:rgb(229,124,127);
+    padding: 8px 0 15px 0;
+}
+
+.container {
+    width:860px;
+    margin:0 auto;
+}
+
+.list {
+    width:100%;
+    margin-top:20px;
+}
+
+.list__odd {
+    padding: 10px 0 10px 10px;
+    background-color:rgb(136,131,158);
+    color:white;
+    font-size: 22px;
+    display:flex;
+    align-items:center;
+}
+
+.list__even { 
+    padding: 10px 0 10px 10px;
+    background-color:rgb(122,117,147);
+    color:white;
+    font-size: 22px;
+    display:flex;
+    align-items:center;
+}
+.list__odd input{
+    margin: 0 10px 0 0;
+}
+
+.list__even input{
+    margin: 0 10px 0 0;
+}
+
+#apple{                                                     /*По атрибуту*/
+    margin: 0 10px 0 0;
+}
+
+.list__odd--first::after{                                  /*after, before*/
+    content:"   (for the next lessons about the CSS)";
+    font-size: 14px;
+    color:rgb(192,203,214);
+}
+
+.list__even--second::after{
+    content:" (for more CSS manipulations)";
+    font-size: 14px;
+    color:rgb(192,203,214);
+}
+
+.list__odd--third::after{
+    content:" (because they are awesome)";
+    font-size: 14px;
+    color:rgb(192,203,214);
+}
+
+.list__even--fourth::after{
+    content:"   (hm.. the always disappear)";
+    font-size: 14px;
+    color:rgb(192,203,214);
+}
+
+.list__even--last::after{
+    content:"   (for my friends)";
+    font-size: 14px;
+    color:rgb(192,203,214);
+}
+
+label{
+    display: inline-block;
+    width: 100%;
+}
+
+.list__odd input label:checked{                             
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+    background-color:rgb(94,98,119);
+    text-decoration:line-through;
+    color:rgb(163,160,181);
+}
+
+input:checked + label{                       /*checked и другие элементы "+"*/
+    text-decoration: line-through;
+    opacity:0.5;
+}
+
+label:active{                               /*active*/
+    color:brown;
+}
+
+.list li:last-child{                               
+    margin-top:25px;
+    width:100%;
+    text-align:center;
+    justify-content: center;
+    padding:10px 0;
+    font-size: 22px;
+    background-color:rgb(74,79,86);
+    color:rgb(229,124,127);
+    pointer-events: none;
+}
+
+.list li:hover{                            /*hover*/
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+    background-color:rgb(94,98,119);
+}
+
+
